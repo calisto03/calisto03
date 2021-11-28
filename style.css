@@ -45,12 +45,22 @@ margin-left: 50px;
 }
 
 h3
-{font-family:"Roboto Thin";
+{font-family:"Roboto_Bold";
     width: 650px;
     color:white;
 margin-top: 10px;
     margin-left: 10px;
-font-size: 18px;}
+font-size: 26px;
+    -webkit-text-stroke: 1px black;
+    text-stroke: 1px black;}
+
+.nome h3:hover{
+    color:black;
+    -webkit-text-stroke: 1px white;
+    text-stroke: 1px white;
+   
+
+}
 
 h4{font-family:"Roboto Thin";
     color: white;
@@ -76,7 +86,7 @@ hr{width: 80%;
     border-bottom: none;
     border-left: none;
     border-right: none;
-margin-top: 20px;
+margin-top: 30px;
 margin-left:40px;}
 
 
@@ -130,6 +140,8 @@ z-index: 2;}
 
 }
 
+#forma_sobre{z-index: -1;}
+
 
 
 #forma_amarela{top: 100px;
@@ -144,7 +156,9 @@ left: 70px;
 
 #forma_verde p {
     font-family: Roboto_Bold;
-    color: dodgerblue;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    text-stroke: 1px white;
     font-size: 2em;
     font-weight: bold;
 margin-left: -400px;
@@ -181,14 +195,16 @@ font-size: 0.8em;
 
 #forma_amarela{
     position: absolute;
-    left: 0%;
+    left: 5%;
     top: 10%;
 
 }
 
 #forma_amarela p{
     font-family: Roboto_Bold;
-  color: purple;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    text-stroke: 1px white;
     margin-top: 50px;
     margin-left: 200px;
     font-size: 2em;
@@ -200,11 +216,13 @@ font-size: 0.8em;
 #forma_roxa{
     position: absolute;
 left: 45%;
-top: 5%;}
+top: 9%;}
 
 #forma_roxa p{
     font-family: Roboto_Bold;
-    color: mediumpurple;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    text-stroke: 1px white;
     font-size: 2em;
     font-weight: bold;
 margin-top: 35px;
@@ -219,7 +237,9 @@ margin-top: 35px;
 
 #forma_amarilo p{
     font-family: Roboto_Bold;
-    color: #a7c42c;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    text-stroke: 1px white;
     font-size: 2em;
     font-weight: bold;
     margin-top: 35px;
@@ -234,7 +254,9 @@ margin-top: 35px;
 
 #forma_rosa p{
     font-family: Roboto_Bold;
-    color: #0ec178;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    text-stroke: 1px white;
     font-size: 2em;
     font-weight: bold;
     margin-top: 35px;
@@ -249,7 +271,9 @@ margin-top: 35px;
 
 #forma_vermelha p{
     font-family: Roboto_Bold;
-    color: #ffd710;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    text-stroke: 1px white;
     font-size: 2em;
     font-weight: bold;
     margin-top: 45px;
@@ -264,10 +288,66 @@ margin-top: 35px;
 
 #forma_branca p{
     font-family: Roboto_Bold;
-    color: #927dea;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    text-stroke: 1px white;
     font-size: 2em;
     font-weight: bold;
     margin-top: 70px;
     margin-left: -100px;
 
+}
+
+#grupo{
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    width: 70%;
+    height: 86vh;
+    z-index: 5;
+overflow: scroll;}
+
+.projetos{display: flex;
+align-items: center;
+    margin-top: 4%;
+    justify-content: space-between;
+
+}
+
+.projetos h3{ font-family: Roboto-Light;
+    font-size: 50px;
+    color: white;
+    -webkit-text-stroke: 1px white;
+    text-stroke: 1px white;
+}
+
+.projetos h3:hover{
+    color: white;
+
+    animation-name: anima;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+
+}
+
+.projetos p{font-family: Roboto-Light;
+    font-size: 20px;
+    color: white;}
+
+#forma_projeto svg{z-index: -1;
+margin-left: 10%;
+margin-top: 10%;}
+
+@keyframes anima {
+    from {
+        color: white;
+        -webkit-text-stroke: 1px white;
+        text-stroke: 1px white;
+    }
+
+    to {
+        color: transparent;
+        -webkit-text-stroke: 1px white;
+        text-stroke: 1px white;
+    }
 }

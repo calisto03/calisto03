@@ -1,8 +1,6 @@
 
-const formaAmarela=
-    "M3449.3,54.078c-37.712,16.952-44.983,34.7-28.264,89.2s24.127,59.634,64.487,49.424c25.669-6.494,38.077-32.032,59.407-49.424s114.111-24.407,102.37-50.6-45.375-51.488-80.125-38.592S3487.013,37.126,3449.3,54.078Z";
-const formaVerde=
-    "M3457.366,74.379c-34.714,15.6-17.293,47.809,0,69.846s29.984,28.216,69.174,18.3c24.925-6.306,24.511,19.807,56.648-18.3,48.5-73.355,14.617-36.641-23.128-56.338S3493.984,57.919,3457.366,74.379Z";
+const formaAmarela= "M3449.3,54.078c-37.712,16.952-79.729,34.7-63.01,89.2s58.872,59.634,99.233,49.424c25.669-6.494,38.077-32.032,59.407-49.424s114.111-24.407,102.37-50.6-55.49-20.267-90.239-7.371S3487.013,37.126,3449.3,54.078Z";
+const formaVerde= "M3457.366,74.379c-34.714,15.6-17.293,47.809,0,69.846s29.984,28.216,69.174,18.3c24.925-6.306,24.511,19.807,56.648-18.3,48.5-73.355,14.617-36.641-23.128-56.338S3493.984,57.919,3457.366,74.379Z";
 
 const formaAzul="M3738.683,98.512c56.005,38.194,72.382,75.532,64.386,126.056s-75.944,130.625-167.35,107.5c-57.147-14.457-165.248,25.025-204.123,0s-33.351-140.109-21.98-175.911c18.807-59.22,85.668-48.773,155.569-46.908S3682.678,60.318,3738.683,98.512Z";
 
@@ -16,6 +14,7 @@ const formavermelha="M3219.157,602.964c-23.319,18.823-59.663,54.638,0,66.086s77-
 
 const formabranca="M3189.858,529.372c-11.755,8.017-12.247,35.813-10.021,47.147s.573,38.96,74.383,37.958,60.209-22.417,65.013-37.958,48.114-37.758,13.607-53.294-33.5-20.871-69.278-22.5S3201.613,521.355,3189.858,529.372Z";
 
+const formaprojeto="M3227.893,276.324c-58.959-7.605-101.223-29.7-81.727,36.741s116.5,17.345,253.8,175.109,193.613,114.164,223.278,41.44,7.316-170.175-145.254-169.886S3286.853,283.929,3227.893,276.324Z";
 
 
 
@@ -28,6 +27,7 @@ const forma_amarilo=document.querySelector('#forma_amarilo');
 const forma_rosa=document.querySelector('#forma_rosa');
 const forma_vermelha=document.querySelector('#forma_vermelha');
 const forma_branca=document.querySelector('#forma_branca');
+const forma_projeto=document.querySelector('#forma_projeto');
 
 
 //forma amarela
@@ -45,7 +45,7 @@ const forma_branca=document.querySelector('#forma_branca');
 
 
 timeline_amarela.add({
-        targets:".amarelo",
+        targets:".amarela",
         d:[
             {
                 value:formaAmarela,
@@ -215,6 +215,30 @@ timeline_branca.add({
     d:[
         {
             value:formabranca,
+
+
+
+        }
+    ]
+
+});
+
+//forma projeto
+const timeline_projeto=anime.timeline({
+    duration:2600,
+    easing:"linear",
+    direction: 'alternate',
+    loop: true,
+    autoplay: true,
+});
+
+
+
+timeline_projeto.add({
+    targets:".projeto",
+    d:[
+        {
+            value:formaprojeto,
 
 
 
