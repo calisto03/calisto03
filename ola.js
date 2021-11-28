@@ -10,7 +10,13 @@ const formaRoxa="M3221.127,508.26c3.46-26.05,35.326-38.483,68.111-3.586s10.417,2
 
 const formaamarilo="M3302.7,617.456c-20.133-17.547-15.218-9.82-17.98-49.907s55.677-49.487,76.18-6.991,51.93,33.86,9.549,56.9S3322.83,635,3302.7,617.456Z";
 
-const formarosita="M3186.882,469.566c5.347-14.126-9.262-76.511,64-43.046s55.27,54.264,79.159,89.352-22.665,77.308-44.331,91.963-81.024,24.633-90.584-25.142,46.525-79.333,14.98-83.383S3181.534,483.692,3186.882,469.566Z";
+const formarosa="M3221.672,591.937c-18.263,24.563-22.678,48.409,36.985,59.857s55.552-2.022,100.319-5.272,80-19.68,39.795-63.8c-16.283-17.868-37.49-22.012-87.386-16.077S3239.935,567.373,3221.672,591.937Z";
+
+const formavermelha="M3219.157,602.964c-23.319,18.823-59.663,54.638,0,66.086s77-5.886,121.769-9.136,86.158-6.549,45.952-50.667c-16.283-17.868-24.548-21.422-74.444-15.487S3242.477,584.141,3219.157,602.964Z";
+
+const formabranca="M3189.858,529.372c-11.755,8.017-12.247,35.813-10.021,47.147s.573,38.96,74.383,37.958,60.209-22.417,65.013-37.958,48.114-37.758,13.607-53.294-33.5-20.871-69.278-22.5S3201.613,521.355,3189.858,529.372Z";
+
+
 
 
 
@@ -19,8 +25,9 @@ const forma_verde= document.querySelector('#forma_verde');
 const forma_azul=document.querySelector('#forma_azul');
 const forma_roxa=document.querySelector('#forma_roxa');
 const forma_amarilo=document.querySelector('#forma_amarilo');
-const forma_rosita=document.querySelector('#forma_rosita');
-
+const forma_rosa=document.querySelector('#forma_rosa');
+const forma_vermelha=document.querySelector('#forma_vermelha');
+const forma_branca=document.querySelector('#forma_branca');
 
 
 //forma amarela
@@ -143,8 +150,9 @@ timeline_amarilo.add({
 
 });
 
-//forma rosita
-const timeline_rosita=anime.timeline({
+
+//forma rosa
+const timeline_rosa=anime.timeline({
     duration:2600,
     easing:"linear",
     direction: 'alternate',
@@ -154,11 +162,11 @@ const timeline_rosita=anime.timeline({
 
 
 
-timeline_rosita.add({
-    targets:".rosita",
+timeline_rosa.add({
+    targets:".rosa",
     d:[
         {
-            value:formarosita,
+            value:formarosa,
 
 
 
@@ -166,5 +174,56 @@ timeline_rosita.add({
     ]
 
 });
+
+//forma vermelha
+const timeline_vermelha=anime.timeline({
+    duration:2600,
+    easing:"linear",
+    direction: 'alternate',
+    loop: true,
+    autoplay: true,
+});
+
+
+
+timeline_vermelha.add({
+    targets:".vermelha",
+    d:[
+        {
+            value:formavermelha,
+
+
+
+        }
+    ]
+
+});
+
+//forma branca
+const timeline_branca=anime.timeline({
+    duration:2600,
+    easing:"linear",
+    direction: 'alternate',
+    loop: true,
+    autoplay: true,
+});
+
+
+
+timeline_branca.add({
+    targets:".branca",
+    d:[
+        {
+            value:formabranca,
+
+
+
+        }
+    ]
+
+});
+
+
+
 
 

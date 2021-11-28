@@ -19,7 +19,7 @@ padding: 0;}
 }
 
 body{height:100vh;
-background-color: white;
+background-color: #161616;
 }
 
 svg{cursor: pointer;
@@ -41,25 +41,25 @@ header{display: flex;}
 h2{font-family:"Roboto Thin";
 font-size: 70px;
 margin-left: 50px;
-    color: black;
+    color: white;
 }
 
 h3
 {font-family:"Roboto Thin";
     width: 650px;
-    color:black;
+    color:white;
 margin-top: 10px;
     margin-left: 10px;
 font-size: 18px;}
 
 h4{font-family:"Roboto Thin";
-    color: black;
+    color: white;
 font-size: 80px;}
 
 p
 {font-family:"Roboto Thin";
     line-height: 30px;
-    color: black;
+    color: white;
 }
 
 a{text-decoration: none;
@@ -72,7 +72,7 @@ a:hover{font-size: 17px;
 
 
 hr{width: 80%;
-    border-top: 0.5px solid black;
+    border-top: 0.5px solid white;
     border-bottom: none;
     border-left: none;
     border-right: none;
@@ -133,10 +133,11 @@ z-index: 2;}
 
 
 #forma_amarela{top: 100px;
-left: 70px;}
+left: 70px;
+}
 
 #forma_verde{
-    left: 60%;
+    left: 70%;
     top: 40%;
     position: absolute;
 }
@@ -146,7 +147,7 @@ left: 70px;}
     color: dodgerblue;
     font-size: 2em;
     font-weight: bold;
-
+margin-left: -400px;
     margin-top: 50px;
     text-align: center;
 }
@@ -178,15 +179,18 @@ font-size: 0.8em;
     font-weight: bold;
 }
 
-#forma-amarela_forma{
-    left: 250px;
-    top: 150px;
+#forma_amarela{
+    position: absolute;
+    left: 0%;
+    top: 10%;
 
 }
 
-#forma-amarela_forma p{
+#forma_amarela p{
     font-family: Roboto_Bold;
   color: purple;
+    margin-top: 50px;
+    margin-left: 200px;
     font-size: 2em;
     font-weight: bold;
 }
@@ -210,15 +214,60 @@ margin-top: 35px;
 
 #forma_amarilo{
     position: absolute;
-    left: 75%;
-    top: 20%;}
+    left: 85%;
+    top: 10%;}
 
 #forma_amarilo p{
     font-family: Roboto_Bold;
-    color: #e2cd05;
+    color: #a7c42c;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 35px;
+    margin-left: -50px;
+
+}
+
+#forma_rosa{
+    position: absolute;
+    left: 25%;
+    top: 35%;}
+
+#forma_rosa p{
+    font-family: Roboto_Bold;
+    color: #0ec178;
     font-size: 2em;
     font-weight: bold;
     margin-top: 35px;
     margin-left: 110px;
+
+}
+
+#forma_vermelha{
+    position: absolute;
+    left: -1%;
+    top: 70%;}
+
+#forma_vermelha p{
+    font-family: Roboto_Bold;
+    color: #ffd710;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 45px;
+    margin-left: 130px;
+
+}
+
+#forma_branca{
+    position: absolute;
+    left: 40%;
+    top: 55%;}
+
+#forma_branca p{
+    font-family: Roboto_Bold;
+    color: #927dea;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 70px;
+    margin-left: -100px;
 
 }
