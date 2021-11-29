@@ -30,6 +30,8 @@ top: 0px;}
 .nome{width: 200px;
 height: 50px;}
 
+.menu_telemovel{display: none;}
+
 #forma_verde{
 left: 60%;
 top: 40%;}
@@ -378,6 +380,23 @@ margin-top: 10%;}
        height: 100vh;
 
    }
+
+    .menu_telemovel{
+        position: absolute;
+        display: block;
+    background-color: rebeccapurple;
+        width: 100%;
+        height: 100%;
+    z-index: 2;}
+
+    .imagem_cruz{position: absolute;
+    right: 2%;}
+
+    .menu_telemovel p{text-align: center;
+    font-family: Roboto-Light;
+    font-size: 40px;
+    line-height: 10%;
+    margin-top: 25%;}
 
     .medio{display: none;}
 

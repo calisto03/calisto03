@@ -247,6 +247,16 @@ timeline_projeto.add({
 
 });
 
+function menu(){
+    var menue=document.getElementByClassName('menu_telemovel');
+    if (menue.style.display=="block"){
+        menue.style.display="none";
+    } else{
+        menue.style.display="block";
+    }
+
+}
+
 
 
 
