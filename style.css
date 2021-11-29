@@ -55,11 +55,14 @@ font-size: 26px;
     text-stroke: 1px black;}
 
 .nome h3:hover{
-    color:black;
-    -webkit-text-stroke: 1px white;
-    text-stroke: 1px white;
-   
+    color: white;
+    animation-name: anima_h;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
 
+}
+
+.nome img{display: none;
 }
 
 h4{font-family:"Roboto Thin";
@@ -76,7 +79,7 @@ a{text-decoration: none;
 color: black;
 }
 
-a:hover{font-size: 17px;
+a:hover{font-size: 16.3px;
 }
 
 
@@ -323,7 +326,6 @@ align-items: center;
 
 .projetos h3:hover{
     color: white;
-
     animation-name: anima;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
@@ -350,4 +352,73 @@ margin-top: 10%;}
         -webkit-text-stroke: 1px white;
         text-stroke: 1px white;
     }
+}
+
+@keyframes anima_h {
+    from {
+        color:white;
+        -webkit-text-stroke: 1px black;
+        text-stroke: 1px black;
+    }
+
+    to {
+        color: transparent;
+        -webkit-text-stroke: 1px white;
+        text-stroke: 1px white;
+    }
+}
+
+@media screen  {
+@media(max-width: 961px)  {
+
+   body{
+       overflow-x: hidden;
+       overflow-y: hidden;
+       background-color: black;
+       height: 100vh;
+
+   }
+
+    .medio{display: none;}
+
+hr{display: none;}
+
+.nome h3{font-family: Roboto-Light;
+    font-size: 30px;
+width: max-content;
+}
+
+    .fundo h4{font-size: 35px;}
+
+    #forma_verde{display: none}
+    #forma_branca{display: none}
+    #forma_vermelha{display: none}
+    #forma_roxa{display: none}
+#forma_verde{display: none}
+    #forma_amarilo{display: none}
+
+    #forma_amarela{ margin-left:10%;
+        margin-top: 10%;}
+    #forma_rosa{margin-top: 40%;}
+
+    .nome{display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 96%;}
+
+    .nome img{display: block;
+        width: 45px;}
+
+
+
+
+
+
+
+}
+
+
+
+
+
 }
