@@ -30,7 +30,7 @@ top: 0px;}
 .nome{width: 200px;
 height: 50px;}
 
-.menu_telemovel{display: none;}
+#menu_telemovel{display: none;}
 
 #forma_verde{
 left: 60%;
@@ -309,7 +309,7 @@ margin-top: 35px;
     left: 20%;
     width: 70%;
     height: 86vh;
-    z-index: 5;
+    z-index: 4;
 overflow: scroll;}
 
 .projetos{display: flex;
@@ -371,7 +371,7 @@ margin-top: 10%;}
 }
 
 @media screen  {
-@media(max-width: 961px)  {
+@media(max-width: 600px)  {
 
    body{
        overflow-x: hidden;
@@ -381,24 +381,34 @@ margin-top: 10%;}
 
    }
 
-    .menu_telemovel{
+    #menu_telemovel{
         position: absolute;
-        display: block;
-    background-color: rebeccapurple;
+        display: none;
+    background-color: black;
         width: 100%;
-        height: 100%;
-    z-index: 2;}
+        height: 100% ;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right:0;
+    z-index: 5;}
 
     .imagem_cruz{position: absolute;
-    right: 2%;}
+    right: 5%;
+        margin-top: -4%;}
 
-    .menu_telemovel p{text-align: center;
+    #menu_telemovel p{text-align: center;
     font-family: Roboto-Light;
     font-size: 40px;
-    line-height: 10%;
-    margin-top: 25%;}
+        margin-top: 15%;
+}
 
-    .medio{display: none;}
+    .opcoes{margin-top:40%;
+    height: 50%;
+}
+
+
+    #medio_index{display: none;}
 
 hr{display: none;}
 
@@ -428,14 +438,29 @@ width: max-content;
     .nome img{display: block;
         width: 45px;}
 
+    .medio_direito{display: none;}
 
+    .medio_esquerdo{display: none;}
 
+    section{display: block;
+    width: 100%;}
 
+    #sobre_mim_h h2{margin-left: 0;
+    text-align: center;
+    font-size: 50px;}
 
+    #sobre_mim_texto {overflow: scroll;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+        width: 90%;}
 
-
+    #fundo_sobre{display: none;}
 }
 
+    #forma_azul {width: 80%;
+    margin-left: 10%;
+    margin-top: 20%;}
 
 
 

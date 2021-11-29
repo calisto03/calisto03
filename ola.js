@@ -248,11 +248,11 @@ timeline_projeto.add({
 });
 
 function menu(){
-    var menue=document.getElementByClassName('menu_telemovel');
-    if (menue.style.display=="block"){
-        menue.style.display="none";
-    } else{
+    var menue=document.getElementById('menu_telemovel');
+    if (menue.style.display=="none"){
         menue.style.display="block";
+    } else{
+        menue.style.display="none";
     }
 
 }
