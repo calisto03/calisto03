@@ -493,8 +493,7 @@ width: max-content;
 }
 
     #forma_azul {width: 80%;
-    margin-left: 10%;
-    margin-top: 20%;}
+    margin-left: 10%;}
 
 
 .projetos h3{font-size: 30px;
@@ -509,7 +508,7 @@ width: max-content;
 }
 
 #forma_projeto svg{width: 70%;
-margin-top: 50%;}
+}
 
 .projetos{display: block;
     overflow-x: hidden;
