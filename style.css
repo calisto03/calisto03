@@ -322,9 +322,12 @@ margin-top: 35px;
     z-index: 4;
 overflow: scroll;}
 
-.projetos{display: flex;
+.projetos{width: 97%;
+    display: flex;
 align-items: center;
     margin-top: 4%;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: space-between;
 
 }
@@ -332,6 +335,7 @@ align-items: center;
 .projetos h3{ font-family: "Roboto_Bold";
     font-size: 50px;
     color: white;
+    text-align: end;
     -webkit-text-stroke: 1px transparent;
     text-stroke: 1px transparent;
 }
@@ -424,7 +428,9 @@ margin-top: 10%;}
 
     .imagem_cruz{position: absolute;
     right: 5%;
-        margin-top: -4%;}
+       }
+
+.imagem_cruz img{width: 90px;}
 
     #menu_telemovel p{text-align: center;
     font-family: Roboto_Light;
@@ -445,6 +451,12 @@ hr{display: none;}
     font-size: 25px;
 width: max-content;
 }
+.projetos{
+    display: block;
+}
+.projetos h3{font-size: 30px;
+text-align: start;
+width: 98%;}
 
     .fundo h4{font-size: 35px;}
 
@@ -496,8 +508,7 @@ width: max-content;
     margin-left: 10%;}
 
 
-.projetos h3{font-size: 30px;
-   }
+
 
 #grupo{
     width: 80%;
@@ -510,14 +521,6 @@ width: max-content;
 #forma_projeto svg{width: 70%;
 }
 
-.projetos{display: block;
-    overflow-x: hidden;
-    margin-top: 25px;
-  }
-
-.projetos h3{width: 100%;
-    margin-top: 0px;
- margin-left: 0px;}
 
 
 
