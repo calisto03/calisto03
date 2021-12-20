@@ -32,7 +32,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Fonts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -66,7 +66,10 @@
       <workItem from="1638189935952" duration="1315000" />
       <workItem from="1638204077172" duration="5382000" />
       <workItem from="1638264584125" duration="388000" />
-      <workItem from="1638297124283" duration="3173000" />
+      <workItem from="1638297124283" duration="3439000" />
+      <workItem from="1638550484618" duration="263000" />
+      <workItem from="1639564735005" duration="307000" />
+      <workItem from="1639955962435" duration="1366000" />
     </task>
     <servers />
   </component>
