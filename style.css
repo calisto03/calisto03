@@ -91,7 +91,24 @@ a{text-decoration: none;
 color: black;
 }
 
-a:hover{font-size: 16.3px;
+
+
+.medio_esquerdo p{font-family: Roboto;
+color:white;}
+
+.medio_esquerdo p:hover {
+    animation-name: anima_p;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+.medio_direito p{font-family: Roboto;
+    color:white;}
+
+.medio_direito p:hover {
+    animation-name: anima_p;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
 }
 
 
@@ -315,6 +332,24 @@ margin-top: 35px;
 
 }
 
+#forma_multi {position: absolute;
+    left: 57%;
+    top: 75%;
+}
+
+#forma_multi p{
+    font-family: Roboto_Bold;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    text-stroke: 1px white;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 100px;
+
+}
+
+
 #grupo{
     position: absolute;
     top: 10%;
@@ -402,6 +437,20 @@ margin-top: 10%;}
     }
 }
 
+@keyframes anima_p {
+    from {
+        color: white;
+        -webkit-text-stroke: 0.5px black;
+        text-stroke: 0.5px black;
+    }
+
+    to {
+        color: transparent;
+        -webkit-text-stroke: 0.5px white;
+        text-stroke: 0.5px white;
+    }
+}
+
 @media screen  {
 @media(max-width: 600px)  {
 
@@ -467,6 +516,7 @@ width: 98%;}
     #forma_vermelha{display: none}
     #forma_roxa{display: none}
 #forma_verde{display: none}
+    #forma_multi{display: none}
 
     #forma_amarilo{margin-left:-50%;
         margin-top: 41%;
@@ -508,6 +558,7 @@ width: 98%;}
 
     #forma_azul {width: 80%;
     margin-left: 10%;}
+
 
 
 

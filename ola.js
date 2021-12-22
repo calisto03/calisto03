@@ -14,6 +14,8 @@ const formavermelha="M3219.157,602.964c-23.319,18.823-59.663,54.638,0,66.086s77-
 
 const formabranca="M3189.858,529.372c-11.755,8.017-12.247,35.813-10.021,47.147s.573,38.96,74.383,37.958,60.209-22.417,65.013-37.958,48.114-37.758,13.607-53.294-33.5-20.871-69.278-22.5S3201.613,521.355,3189.858,529.372Z";
 
+const formamulti="M893.98,591.037c-35.66,4.252-14.894,24.1-11.1,64.836s40.976,20.026,78.2,22.044,89.023,33.356,70.706-13.969-17.557-49.848-59.233-64.484S929.64,586.785,893.98,591.037Z";
+
 const formaprojeto="M3227.893,276.324c-58.959-7.605-101.223-29.7-81.727,36.741s116.5,17.345,253.8,175.109,193.613,114.164,223.278,41.44,7.316-170.175-145.254-169.886S3286.853,283.929,3227.893,276.324Z";
 
 
@@ -27,6 +29,7 @@ const forma_amarilo=document.querySelector('#forma_amarilo');
 const forma_rosa=document.querySelector('#forma_rosa');
 const forma_vermelha=document.querySelector('#forma_vermelha');
 const forma_branca=document.querySelector('#forma_branca');
+const forma_multi=document.querySelector('#forma_multi');
 const forma_projeto=document.querySelector('#forma_projeto');
 
 
@@ -56,6 +59,8 @@ timeline_amarela.add({
         ]
 
     });
+
+
 
     //forma verde
     const timeline_verde=anime.timeline({
@@ -177,7 +182,7 @@ timeline_rosa.add({
 
 //forma vermelha
 const timeline_vermelha=anime.timeline({
-    duration:2600,
+    duration:1900,
     easing:"linear",
     direction: 'alternate',
     loop: true,
@@ -201,7 +206,7 @@ timeline_vermelha.add({
 
 //forma branca
 const timeline_branca=anime.timeline({
-    duration:2600,
+    duration:2100,
     easing:"linear",
     direction: 'alternate',
     loop: true,
@@ -215,6 +220,30 @@ timeline_branca.add({
     d:[
         {
             value:formabranca,
+
+
+
+        }
+    ]
+
+});
+
+//forma multi
+const timeline_multi=anime.timeline({
+    duration:2600,
+    easing:"linear",
+    direction: 'alternate',
+    loop: true,
+    autoplay: true,
+});
+
+
+
+timeline_multi.add({
+    targets:".multiv",
+    d:[
+        {
+            value:formamulti,
 
 
 
